@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   delete :logout, to: "sessions#logout"
 
   resources :sessions, only: [:create]
-  resources :registration, only: [:create]
+  resources :registrations, only: [:create]
 
 
  root to: "static#home"
